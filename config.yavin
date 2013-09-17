@@ -4,3 +4,5 @@
 # 5760x1200, and it uses the three right-most monitors each fake screen is
 # separated by a comma
 fake-outputs 1920x1200+0+0,5760x1200+1920+0
+
+bindsym $mod+Delete exec xflock4
