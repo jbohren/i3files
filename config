@@ -194,7 +194,7 @@ client.focused_inactive #333333 #5f676a #ffffff #484e50
 client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
-bindsym $mod+p [class="Pidgin" title="Liza"] focus
+bindsym $mod+Shift+P [class="Pidgin" title="Liza"] focus
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -204,5 +204,22 @@ bindsym $mod+minus scratchpad show
 
 bindsym $mod+Shift+O [title="Tabs Outliner"] scratchpad show
 
+# Move focus to the next or previous workspace
 bindsym $mod+bracketleft workspace prev
 bindsym $mod+bracketright workspace next
+# Move a window to the next or previous workspace
+bindsym $mod+Shift+bracketleft move workspace prev
+bindsym $mod+Shift+bracketright move workspace next
+
+# Move the current workspace to the next or previous output
+bindsym $mod+Shift+greater move workspace to output right
+bindsym $mod+Shift+less move workspace to output left
+
+# Move the current container to the next or previous output
+bindsym $mod+period move container to output right
+bindsym $mod+comma move container to output left
+
+# Use nitrogen for desktops
+exec --no-startup-id nitrogen --restore
+
+fake-outputs 1920x1200+0+0,5760x1200+1920+0
