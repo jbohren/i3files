@@ -203,7 +203,6 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 bindsym $mod+Shift+O [title="Tabs Outliner"] scratchpad show
-bindsym $mod+esc exec xflock4
 
 # Move focus to the next or previous workspace
 bindsym $mod+bracketleft workspace prev
