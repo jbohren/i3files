@@ -102,9 +102,9 @@ bindsym $mod+Shift+parenleft move workspace 9: atmo
 bindsym $mod+Shift+parenright move workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+C reload
+bindsym $mod+Shift+C exec ~/.i3/i3.bash reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+R restart
+bindsym $mod+Shift+R exec ~/.i3/i3.bash restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
@@ -203,6 +203,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 bindsym $mod+Shift+O [title="Tabs Outliner"] scratchpad show
+bindsym $mod+esc exec xflock4
 
 # Move focus to the next or previous workspace
 bindsym $mod+bracketleft workspace prev
@@ -222,4 +223,8 @@ bindsym $mod+comma move container to output left
 # Use nitrogen for desktops
 exec --no-startup-id nitrogen --restore
 
+# Use "fake-outputs" command to set up two "fake" screens.  The first fake
+# screen is 1920x1200, and uses the left-most monitor the second fake screen is
+# 5760x1200, and it uses the three right-most monitors each fake screen is
+# separated by a comma
 fake-outputs 1920x1200+0+0,5760x1200+1920+0

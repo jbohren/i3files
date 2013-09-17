@@ -102,9 +102,9 @@ bindsym $mod+Shift+parenleft move workspace 9: atmo
 bindsym $mod+Shift+parenright move workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+C reload
+bindsym $mod+Shift+C exec ~/.i3/i3.bash reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+R restart
+bindsym $mod+Shift+R exec ~/.i3/i3.bash restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
@@ -194,7 +194,7 @@ client.focused_inactive #333333 #5f676a #ffffff #484e50
 client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
-bindsym $mod+Shift+P [class="Pidgin" title="Liza"] focus
+bindsym $mod+Shift+P [class="Pidgin"] focus
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -203,6 +203,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 bindsym $mod+Shift+O [title="Tabs Outliner"] scratchpad show
+bindsym $mod+esc exec xflock4
 
 # Move focus to the next or previous workspace
 bindsym $mod+bracketleft workspace prev

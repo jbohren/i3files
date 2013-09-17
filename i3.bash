@@ -7,7 +7,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 cat $DIR/config.base $DIR/config.$HOSTNAME > $DIR/config
 
 # Check if i3 is already running
-if "$(pidof i3)"; then
+if pidof i3 >/dev/null; then
   if [ -n "$1" ]; then
     i3 $1
   else
