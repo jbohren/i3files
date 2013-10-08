@@ -129,17 +129,17 @@ mode "resize" {
     bindsym Shift+colon resize shrink   right 2 px or 2 ppt
 
     # same bindings, but for the arrow keys
-    bindsym Left resize grow left 2 px or 2 ppt
-    bindsym Shift+Left resize shrink   left 2 px or 2 ppt
+    bindsym Shift+Left  resize grow   left 2 px or 2 ppt
+    bindsym Shift+Right resize shrink left 2 px or 2 ppt
 
-    bindsym Down resize grow down 2 px or 2 ppt
-    bindsym Shift+Down resize shrink   down 2 px or 2 ppt
+    bindsym Down resize grow   down 2 px or 2 ppt
+    bindsym Up   resize shrink down 2 px or 2 ppt
 
-    bindsym Up resize grow up 2 px or 2 ppt
-    bindsym Shift+Up resize shrink   up 2 px or 2 ppt
+    bindsym Shift+Up   resize grow   up 2 px or 2 ppt
+    bindsym Shift+Down resize shrink up 2 px or 2 ppt
 
-    bindsym Right resize grow right 2 px or 2 ppt
-    bindsym Shift+Right resize shrink   right 2 px or 2 ppt
+    bindsym Right resize grow   right 2 px or 2 ppt
+    bindsym Left  resize shrink right 2 px or 2 ppt
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
