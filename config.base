@@ -140,17 +140,17 @@ mode "resize" {
     bindsym Shift+colon resize shrink   right 2 px or 2 ppt
 
     # same bindings, but for the arrow keys
-    bindsym Left resize grow left 2 px or 2 ppt
-    bindsym Shift+Left resize shrink   left 2 px or 2 ppt
+    bindsym Shift+Left  resize grow   left 2 px or 2 ppt
+    bindsym Shift+Right resize shrink left 2 px or 2 ppt
 
-    bindsym Down resize grow down 2 px or 2 ppt
-    bindsym Shift+Down resize shrink   down 2 px or 2 ppt
+    bindsym Down resize grow   down 2 px or 2 ppt
+    bindsym Up   resize shrink down 2 px or 2 ppt
 
-    bindsym Up resize grow up 2 px or 2 ppt
-    bindsym Shift+Up resize shrink   up 2 px or 2 ppt
+    bindsym Shift+Up   resize grow   up 2 px or 2 ppt
+    bindsym Shift+Down resize shrink up 2 px or 2 ppt
 
-    bindsym Right resize grow right 2 px or 2 ppt
-    bindsym Shift+Right resize shrink   right 2 px or 2 ppt
+    bindsym Right resize grow   right 2 px or 2 ppt
+    bindsym Left  resize shrink right 2 px or 2 ppt
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -200,10 +200,16 @@ bindsym $mod+u [urgent=latest] focus
 bindsym $mod+G exec google-chrome
 
 # class                 border  backgr. text    indicator
-client.focused          #4c7899 #285577 #ffffff #2e9ef4
+client.focused          #ff9d00 #ffbe33 #4a3300 #f42e2e
 client.focused_inactive #333333 #5f676a #ffffff #484e50
 client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
+
+# default colors (blue)
+#client.focused          #4c7899 #285577 #ffffff #2e9ef4
+#client.focused_inactive #333333 #5f676a #ffffff #484e50
+#client.unfocused        #333333 #222222 #888888 #292d2e
+#client.urgent           #2f343a #900000 #ffffff #900000
 
 bindsym $mod+Shift+P [class="Pidgin"] focus
 
