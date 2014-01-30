@@ -76,30 +76,41 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindcode $mod+d focus child
+#
+set $w1 1
+set $w2 2
+set $w3 3
+set $w4 4
+set $w5 5
+set $w6 6
+set $w7 7
+set $w8 8
+set $w9 9
+set $w10 10
 
 # switch to workspace
-bindsym $mod+1 workspace 1: comms
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9: atmo
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace $w1
+bindsym $mod+2 workspace $w2
+bindsym $mod+3 workspace $w3
+bindsym $mod+4 workspace $w4
+bindsym $mod+5 workspace $w5
+bindsym $mod+6 workspace $w6
+bindsym $mod+7 workspace $w7
+bindsym $mod+8 workspace $w8
+bindsym $mod+9 workspace $w9
+bindsym $mod+0 workspace $w10
 
 # move focused container to workspace
-bindsym $mod+Shift+exclam move workspace 1: comms
-bindsym $mod+Shift+at move workspace 2
-bindsym $mod+Shift+numbersign move workspace 3
-bindsym $mod+Shift+dollar move workspace 4
-bindsym $mod+Shift+percent move workspace 5
-bindsym $mod+Shift+asciicircum move workspace 6
-bindsym $mod+Shift+ampersand move workspace 7
-bindsym $mod+Shift+asterisk move workspace 8
-bindsym $mod+Shift+parenleft move workspace 9: atmo
-bindsym $mod+Shift+parenright move workspace 10
+bindsym $mod+Shift+exclam move workspace $w1
+bindsym $mod+Shift+at move workspace $w2
+bindsym $mod+Shift+numbersign move workspace $w3
+bindsym $mod+Shift+dollar move workspace $w4
+bindsym $mod+Shift+percent move workspace $w5
+bindsym $mod+Shift+asciicircum move workspace $w6
+bindsym $mod+Shift+ampersand move workspace $w7
+bindsym $mod+Shift+asterisk move workspace $w8
+bindsym $mod+Shift+parenleft move workspace $w9
+bindsym $mod+Shift+parenright move workspace $w10
 
 # reload the configuration file
 bindsym $mod+Shift+C exec ~/.i3/i3.bash reload
