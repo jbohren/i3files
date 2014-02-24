@@ -4,7 +4,7 @@
 DIR="$( cd "$( dirname "$0" )" && pwd)"
 
 # Generate the full config based on the hostname
-cat $DIR/config.base $DIR/config.$HOSTNAME > $DIR/config
+cat $DIR/config.base $DIR/machine_configs/config.$HOSTNAME > $DIR/config
 
 # Check if i3 is already running
 if pidof i3 >/dev/null; then
