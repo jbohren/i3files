@@ -237,4 +237,6 @@ bindsym $mod+period move container to output right
 bindsym $mod+comma move container to output left
 
 # Use nitrogen for desktops
-exec --no-startup-id nitrogen --restore
+#exec --no-startup-id nitrogen --restore
+# Use a solid color for desktops
+exec --no-startup-id xsetroot -solid "#000000"
