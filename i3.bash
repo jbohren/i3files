@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Get the directory to this file
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+I3DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
-source i3.sh
+source $I3DIR/scripts/genconfig.sh
+source $I3DIR/scripts/run_or_reload.sh
