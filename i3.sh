@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Generate the full config based on the hostname
-cat $DIR/config.base $DIR/config.$HOST > $DIR/config
+cat $DIR/config.base $DIR/machine_configs/config.$HOST > $DIR/config
 
 # Check if i3 is already running
 if pidof i3 >/dev/null; then

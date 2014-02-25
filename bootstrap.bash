@@ -26,7 +26,6 @@ fi
 
 if [ -z "$i3_FOUND" ] || verlt "$i3_VERSION" "$i3_VERSION_MIN" ; then 
   echo "$INFO Installing i3 version $i3_VERSION_MIN ..."
-  sudo su
   echo "deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe" >> /etc/apt/sources.list
   apt-get update
   apt-get --allow-unauthenticated install sur5r-keyring
