@@ -30,7 +30,7 @@ if [ -z "$i3_FOUND" ] || verlt "$i3_VERSION" "$i3_VERSION_MIN" ; then
   apt-get update
   apt-get --allow-unauthenticated install sur5r-keyring
   apt-get update
-  apt-get install i3 nitrogen dmenu
+  apt-get install i3 nitrogen dmenu libjson-perl
 fi
 
 i3_VERSION="$(i3 --version | sed 's/^.*\([0-9]\.[0-9]\).*$/\1/g')"
