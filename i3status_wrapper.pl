@@ -39,7 +39,7 @@ while (my ($statusline) = (<STDIN> =~ /^,?(.*)/)) {
     foreach my $line (@memraw) {
         if ($line =~ /^Mem.+/) {
             my @vals = split(' ',$line, -1);
-            $memline = sprintf("%0.f%% mem free", 100 * $vals[3] / $vals[1]);
+            $memline = sprintf("%0.f%% mem free", 100 * ($vals[1] - $vals[2]) / $vals[1]);
         }
     }
 
