@@ -27,6 +27,16 @@ To run i3 via the wrapper script:
 .i3/i3.bash
 ```
 
+
+### XFCE
+
+autostart:
+```
+bootstrap_i3_xfce_autostart.bash
+```
+
+panel plugin:
+
 ## Design
 
 This set of i3 config files and scripts enables the on-line generation of 

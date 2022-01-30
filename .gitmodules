@@ -1,0 +1,6 @@
+[submodule "panel/xfce4-i3-workspaces-plugin"]
+	path = panel/xfce4-i3-workspaces-plugin
+	url = git@github.com:denesb/xfce4-i3-workspaces-plugin.git
+[submodule "panel/i3ipc-glib"]
+	path = panel/i3ipc-glib
+	url = git@github.com:altdesktop/i3ipc-glib.git
